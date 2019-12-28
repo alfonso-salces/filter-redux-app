@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {APP_BASE_HREF} from '@angular/common';
 
 import { ReactiveFormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
@@ -37,7 +38,7 @@ import { FilterPipe } from './filter/filter.pipe';
       logOnly: environment.production,
     }),
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: 'https://arfonzo2k18.github.io/filter-redux-app/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
