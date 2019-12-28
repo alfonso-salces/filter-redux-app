@@ -38,7 +38,7 @@ import { FilterPipe } from './filter/filter.pipe';
       logOnly: environment.production,
     }),
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: 'https://arfonzo2k18.github.io/filter-redux-app/'}],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
